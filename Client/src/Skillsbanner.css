@@ -1,0 +1,39 @@
+.skillsBanner {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--color-primary);
+}
+
+.skillsTrack {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+}
+
+.skillsBanner:hover .skillsTrack {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.skillBadge {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 28px;
+    font-weight: bolder;
+    font-family: var(--font-serious);
+    font-size: 16px;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}

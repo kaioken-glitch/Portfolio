@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Akbar';
+  src: url('/fonts/akbar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SimpsonsFont';
+  src: url('/fonts/Simpsonfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrandikSans';
+  src: url('/fonts/BrandinkSans-rgOpA.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrandikSans';
+  src: url('/fonts/BrandinkSansLight-MV4mr.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  /* primary */
+  --color-primary:        #FFD90F;  /* yellow  — logo, CTA, stat nums   */
+  --color-primary-dark:   #C8970A;  /* yellow shadow / hover            */
+
+  /* base */
+  --color-bg:             #F5F3EE;  /* page background                  */
+  --color-surface:        #FFFFFF;  /* card / panel surface             */
+  --color-dark:           #1A1A1A;  /* nav, hero bg, footer             */
+  --color-dark-mid:       #242424;  /* dark card surface                */
+  --color-dark-border:    #2E2E2E;  /* borders on dark bg               */
+
+  /* text */
+  --color-text-primary:   #1A1A1A;  /* headings, body                   */
+  --color-text-muted:     #888780;  /* descriptions, meta               */
+  --color-text-faint:     #5F5E5A;  /* footer copy, stat labels         */
+  --color-text-ghost:     #444441;  /* dark-bg muted text               */
+
+  /* accent — navy */
+  --color-navy:           #3B5BA5;  /* contact band, project links      */
+  --color-navy-light:     #85B7EB;  /* navy muted text on navy bg       */
+
+  /* accent — purple */
+  --color-purple:         #7B6B9E;  /* eyebrow labels, section tags     */
+  --color-purple-light:   #B8AECF;  /* nav links, hero role text        */
+  --color-purple-tint:    #EEE8F8;  /* pill / tag background            */
+
+  /* accent — green */
+  --color-green:          #8DC63F;  /* available dot, live badge        */
+  --color-green-tint:     #EAF3E8;  /* green pill background            */
+
+  /* accent — teal */
+  --color-teal:           #7EC8C8;  /* info accent, linkedin icon       */
+  --color-teal-tint:      #E8F5F3;  /* teal pill background             */
+
+  /* accent — beige */
+  --color-beige:          #C4A882;  /* project thumb, timeline dot      */
+  --color-beige-bg:       #F5F3EE;  /* warm section background          */
+
+  /* accent — yellow tint */
+  --color-yellow-tint:    #FFF8CC;  /* yellow pill background           */
+  --color-navy-tint:      #E8EEF8;  /* navy pill background             */
+
+  /* semantic */
+  --color-danger:         #C8282A;  /* errors, destructive actions      */
+  --color-border:         #E0DDD6;  /* card borders on light bg         */
+  --color-border-faint:   #F0EDE8;
+
+  --font-display: 'Akbar', sans-serif;
+  --font-body: 'SimpsonsFont', sans-serif;
+  --font-serious: 'BrandikSans', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  min-width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  overflow: hidden;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Akbar', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    cursor: default; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #55555500; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #52525200; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #88888800; 
+}
